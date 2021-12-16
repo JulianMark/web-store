@@ -5,7 +5,10 @@ server:
 # config mongodb server local
 spring:
   rabbitmq:
-    addresses: http://localhost:5672
+    addresses: localhost:5672
+    username: guest
+    password: guest
+    virtual_host: /
   data:
     mongodb:
       host: LocalHost

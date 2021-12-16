@@ -10,3 +10,7 @@ spring:
       port: 27017
       authentication-database: none
       database: Products
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka

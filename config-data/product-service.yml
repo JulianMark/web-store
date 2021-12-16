@@ -1,0 +1,12 @@
+# server app port
+server:
+  port: 9090
+
+# config mongodb server local
+spring:
+  data:
+    mongodb:
+      host: LocalHost
+      port: 27017
+      authentication-database: none
+      database: Products

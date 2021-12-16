@@ -4,6 +4,8 @@ server:
 
 # config mongodb server local
 spring:
+  rabbitmq:
+    addresses: http://localhost:5672
   data:
     mongodb:
       host: LocalHost

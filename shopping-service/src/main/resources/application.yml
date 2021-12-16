@@ -1,36 +1,9 @@
-#spring:
-#  application:
-#    name: shopping-service
-#  config:
-#    import: optional:configserver:http://localhost:8888
-#  cloud:
-#    config:
-#      username: root
-#      password: s3cr3t
-#  rabbitmq:
-#    addresses: localhost:5672
-#    username: guest
-#    password: guest
-#    virtual_host: /
-
-# server app port
-server:
-  port: 9092
-
-# config mongodb server local
 spring:
-  rabbitmq:
-    addresses: localhost:5672
-    username: guest
-    password: guest
-    virtual_host: /
-  data:
-    mongodb:
-      host: LocalHost
-      port: 27017
-      authentication-database: none
-      database: Shopping
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8099/eureka
+  application:
+    name: shopping-service
+  config:
+    import: optional:configserver:http://localhost:8888
+  cloud:
+    config:
+      username: root
+      password: s3cr3t

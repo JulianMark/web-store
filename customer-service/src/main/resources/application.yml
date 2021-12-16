@@ -1,12 +1,9 @@
-# server app port
-server:
-  port: 9091
-
-# config mongodb server local
 spring:
-  data:
-    mongodb:
-      host: LocalHost
-      port: 27017
-      authentication-database: none
-      database: Customers
+  application:
+    name: customer-service
+  config:
+    import: optional:configserver:http://localhost:8888
+  cloud:
+    config:
+      username: root
+      password: s3cr3t

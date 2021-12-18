@@ -1,0 +1,7 @@
+{
+  "name": "webStoreApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

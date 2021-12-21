@@ -47,7 +47,7 @@ public class PeopleController {
     Person update(@PathVariable Long id, @RequestBody Person person){
         final Person personDB = service.get(id);
         personDB.setName(person.getName());
-        personDB.setSurname(personDB.getSurname());
+        personDB.setSurname(person.getSurname());
         return service.save(personDB);
     }
 

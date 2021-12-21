@@ -19,7 +19,7 @@ import javax.persistence.Table;
 public class Person {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Column(name = "ppe_name")

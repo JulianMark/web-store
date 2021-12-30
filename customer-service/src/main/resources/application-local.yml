@@ -1,0 +1,18 @@
+server:
+  port: 9091
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://webstore:469r5Rqqi6TGL0iI@cluster.erc6q.mongodb.net/customers?retryWrites=true&w=majority
+
+#spring:
+#  application:
+#    name: customer-service
+#  config:
+#    import: optional:configserver:http://localhost:8888
+#  cloud:
+#    config:
+#      username: root
+#      password: s3cr3t
+
